@@ -1,0 +1,104 @@
+
+/* Utility Classes */
+
+.flex {
+    display: flex;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.ff-sanserif {
+    font-family: 'Manrope', 'san-serif';
+}
+
+.fs-1 {
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 58px;
+    letter-spacing: 2px;
+}
+
+.fs-2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 44x;
+    letter-spacing: 1.42857px;
+}
+
+.fs-3 {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 36px;
+    letter-spacing: 1.14286px;
+}
+
+.fs-4 {
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 38px;
+    letter-spacing: 2px;
+}
+
+.fs-5 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 33px;
+    letter-spacing: 1.71429px;
+}
+
+.fs-6 {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 25px;
+    letter-spacing: 1.28571px;
+}
+
+.fs-overline {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 10px;
+}
+
+.fs-subtitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.fs-body {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.font-white {
+    color: hsl(var(--clr-white))
+}
+
+.opacity-half {
+    opacity: 0.5;
+}
+
+@media only screen and (max-width: 35em) {
+    .fs-1 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 36px;
+        letter-spacing: 2px;
+    }
+}
+
+
+
+
+
+
+

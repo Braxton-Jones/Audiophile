@@ -1,0 +1,70 @@
+/* About Audiophile */
+#about-audiophile-container {
+    display: flex;
+    gap: 8.68vw;
+    
+    margin-inline: 11.45vw;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+    
+
+}
+
+.about-audiophile-text-container {
+    max-width: 445px;
+}
+.about-audiophile-text-container h2{
+    color: hsl(var(--clr-black));
+    opacity: 0.5;
+    margin-top: 2rem;
+}
+@media only screen and (min-width: 120em) {
+    #about-audiophile-container {
+        justify-content: space-evenly;
+    }
+}
+
+/*  Tablet  */
+@media only screen and (min-width:35.01em) and (max-width: 64em) {
+    #about-audiophile-container {
+        flex-direction: column-reverse;
+        margin-inline: 5.21vw;
+        gap: 63px;
+        margin-bottom: 120px;
+    }
+
+    .about-audiophile-image-container img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .about-audiophile-text-container {
+        max-width: 610px;
+        text-align: center;
+    }
+}
+
+/*  Mobile  */
+@media only screen and (max-width: 35em) {
+    #about-audiophile-container {
+        flex-direction: column-reverse;
+        margin-inline: 5.21vw;
+        gap: 40px;
+        margin-bottom: 120px;
+    }
+
+    .about-audiophile-image-container img{
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .about-audiophile-text-container {
+        max-width: 360px;
+        text-align: center;
+    }
+
+    .about-audiophile-text-container h1{
+       font-size: 28px;
+    }
+}

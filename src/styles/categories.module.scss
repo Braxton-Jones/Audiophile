@@ -1,0 +1,124 @@
+/* Categories Bars */
+#category-bar {
+    display:flex;
+    justify-content: center;
+    align-items: end;
+    gap: 30px;
+    margin-bottom: 10rem;
+}
+.category-item-container {
+    flex-direction: column;
+    max-width: 24.305vw;
+   
+}
+
+.category-item-image {
+    transform: translateY(120px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.category-item-image img {
+    width: 60%;
+}
+.category-item-text {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 116px;
+    padding-bottom: 30px;
+    padding-inline: 5.5vw;
+    gap: 1rem;
+
+    background-color: hsl(var(--clr-darkgrey));
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.category-item-text h2 {
+    gap: 13.5px;
+    color: hsla(var(--clr-black), 0.5);
+}
+
+.category-item-text h2:hover {
+    color: hsla(var(--clr-softorange))
+}
+.category-item-text h2 span{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#speakers {
+    transform: translateY(130px);
+}
+
+#earphones {
+    transform: translateY(120px);
+}
+
+/* Tablet */
+@media only screen and (min-width: 35.01em) and (max-width: 64em) {
+    #category-bar {
+        gap: 10px;
+        margin-bottom: 120px;
+    }
+    .category-item-container {
+        flex-direction: column;
+        max-width: 29.036vw;
+    }
+
+    .category-item-text {
+        padding-top: 88px;
+        padding-bottom: 22px;
+        padding-inline: 5.5vw;
+        gap: 10px;
+    }
+
+    .category-item-image img {
+        width: 70%;
+    }
+
+    .category-item-image {
+        transform: translateY(120px);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #headphones {
+        transform: translateY(80px);
+    }
+
+    #speakers {
+        transform: translateY(80px);
+    }
+    
+    #earphones {
+        transform: translateY(80px);
+    }
+}
+
+@media only screen and (max-width: 35em) {
+    #category-bar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+
+        margin-bottom: 120px;
+    }
+
+    #category-bar .category-item-container:not(:first-child) {
+        margin-top: -85px;
+    }
+
+    .category-item-container {
+        flex-direction: column;
+        max-width: 87.2vw;
+    }
+    
+}

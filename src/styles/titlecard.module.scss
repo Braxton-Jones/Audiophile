@@ -1,0 +1,26 @@
+/* Title Card */
+.title-card {
+    background-color: hsl(var(--clr-black));
+    justify-content: center;
+    align-items: center;
+}
+
+/*  Desktop  + Tablet */
+@media only screen and (min-width: 35.01em) {
+    .title-card { 
+    padding-block: 97px;
+    margin-bottom: 120px;
+    }
+}
+
+@media only screen and (min-width: 64.01em) {
+    .title-card {
+        margin-bottom: 160px;
+    }
+}
+
+@media only screen and (max-width: 35.01em) {
+    .title-card { 
+        padding-block: 2rem;
+        }
+}

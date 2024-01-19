@@ -1,0 +1,123 @@
+/* Footer */
+/* Desktop */
+#black-footer {
+    background-color: black;
+    padding-inline: 11.45vw;
+    padding-block: 75px;
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px 100px 45px;
+    grid-template-areas: 
+    'logo nav'
+    'info-text social-icons'
+    'copyright .';
+
+    row-gap: 36px;
+}
+
+#footer-line {
+    position: absolute;
+}
+
+#black-footer img{
+    grid-area: logo;
+}
+
+.footer-nav-container {
+    grid-area: nav;
+    justify-self: end;
+    align-self: center;
+}
+
+.footer-text {
+    grid-area: info-text;
+}
+
+.footer-copyright {
+    grid-area: copyright;
+}
+
+.social-icons {
+    gap: 1rem;
+    justify-self: end;
+    align-self: end;
+    grid-area: social-icons;
+   
+}
+
+.social-icons svg {
+    background-color: black;
+    cursor: pointer;
+}
+
+.social-icons svg:hover path{
+    fill: orange;
+    cursor: pointer;
+}
+
+/*  Tablet  */
+@media only screen and (min-width: 35.01em) and (max-width: 64em) {
+    #black-footer {
+       
+        padding-inline: 5.208vw;
+        padding-block: 60px 48px;
+        position: relative;
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 30px 30px 80px 30px;
+        grid-template-areas: 
+        'logo .'
+        'nav nav'
+        'info-text info-text'
+        'copyright social-icons';
+    
+        row-gap: 32px;
+    }
+
+    .footer-nav-container {
+        grid-area: nav;
+        justify-self: start;
+        align-self: center;
+    }
+
+}
+
+/* Mobile */
+@media only screen and (max-width: 35em) {
+    #black-footer {
+        padding-inline: 1.5rem;
+        padding-block: 52px 38px;
+        position: relative;
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 30px 150px 160px 30px 30px;
+        grid-template-areas: 
+        'logo'
+        'nav'
+        'info-text'
+        'copyright'
+        'social-icons';
+    
+        row-gap: 30px;
+    }
+    
+    #black-footer > * {
+        justify-self: center;
+        text-align: center;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        gap: 1.1rem;
+        text-align: center;
+    }
+
+    .footer-text {
+        padding-top: 5px;
+    }
+
+}

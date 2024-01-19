@@ -1,0 +1,466 @@
+/* Front-page */
+
+#front-page-feature {
+    background-image: url('../assets/home/desktop/image-hero.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat:no-repeat;
+    width: 100%;
+    aspect-ratio: 1.975;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.5rem;
+    padding-inline:11.458vw ;
+
+}
+
+.front-page-text-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 30vw;
+
+}
+
+.front-page-text-container h2 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#showcase-feature {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-inline: 11.458vw;
+    margin-bottom: 122px;
+}
+
+#showcase-zx9 {
+    background-color: #D87D4A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 100;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border-radius: 10px;
+}
+
+#showcase-zx9 img{
+    position: absolute;
+    aspect-ratio: 0.83165;
+    max-width: 36.93%;
+    bottom: -15px;
+    left: 8.15vw;
+    z-index: 10;
+    max-height: 700px;
+
+}
+
+#showcase-zx9::after {
+    content: '';
+    background-image: url('../assets/home/desktop/pattern-circles.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 172%;
+    height: 172%;
+    position: absolute;
+    z-index: 0;
+    bottom: -300px;
+    left: -170px;
+    transform: translateZ(-1); /* Adjusted line */
+}
+
+.showcase-text-container1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-right: 6.597vw;
+    max-width: 24.23vw;
+    z-index: 100;
+}
+
+.showcase-text-container1 button{
+    background-color: black;
+    color: white;
+}
+
+.showcase-text-container1 button:hover{
+    background-color: #4C4C4C;
+    opacity: 1.0;
+    border:none;
+}
+
+#showcase-zx9 > div:first-child p {
+    margin-bottom: 1rem;
+}
+
+#showcase-zx7 {
+    background-image: url('../assets/home/desktop/image-speaker-zx7.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    aspect-ratio: 3.4687;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.showcase-text-container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  
+    margin-left: 6.59vw;
+}
+
+#showcase-yx1 {
+    display: flex;
+    gap: 30px;
+}
+
+#showcase-yx1 > div:first-child {
+    background-image: url('../assets/home/desktop/image-earphones-yx1.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 1.6875;
+    width: 37.5vw;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.showcase-text-container3 {
+    display: flex;
+    gap: 2rem;
+    background-color: #F1F1F1;
+    flex: 1;
+    border-radius: 10px;
+}
+
+.showcase-text-container3 div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 6.697vw;
+
+    justify-content: center;
+    max-width: 300px;
+}
+
+.showcase-text-container3 div button,
+.showcase-text-container2 button{
+    background-color: transparent;
+    font-weight: 700;
+}
+/* Desktop  */
+@media only screen and (min-width: 80em){
+
+    #front-page-feature {
+        transform: translateY(-100px);
+    }
+
+    #showcase-zx9 {
+       
+        aspect-ratio: 1.982;
+    }
+}
+@media only screen and (min-width: 64.01em) {
+    .transparent {
+        background-color: transparent;
+    }
+
+    header::after {
+        content: '';
+        max-width: 100%;
+        background-color: transparent;
+        height: 1px;
+        border: 1px solid hsl(var(--clr-white), 0.2);
+
+        position: absolute;
+        bottom: -5%;
+        margin-inline: 11.45vw;
+        right: 0;
+        left: 0;
+    }
+}
+/* Tablet */
+@media only screen and (min-width: 35.01em) and (max-width: 64em) {
+    #front-page-feature {
+        background-image: url('../assets/home/tablet/image-header.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat:no-repeat;
+        width: 100%;
+        aspect-ratio: 1.0535;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 2.5rem;
+
+        transform: translateY(-90px);
+    }
+
+    .front-page-text-container {
+        flex-direction: column;
+        gap: 1.5rem;
+        max-width: none;
+    
+    }
+
+    #showcase-feature {
+        margin-inline: 5.208vw;
+    }
+    #showcase-zx9 {
+ 
+        aspect-ratio: 0.9569;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 100;
+        position: relative;
+        gap: 4rem;
+        padding-block: 60px;
+        overflow: visible;
+     
+    }
+
+    #showcase-zx9 img{
+        position: relative;
+        aspect-ratio: 0.832109;
+        max-width: 250px;
+        bottom: 0;
+        left:0;
+        z-index: 10;
+        max-height: 700px;
+    }
+
+    .showcase-text-container1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        margin-right: 0;
+        max-width: 410px;
+        z-index: 100;
+        margin-inline: 22.1vw;
+    }
+
+    #showcase-zx9::after {
+        content: '';
+        background-image: url('../assets/home/desktop/pattern-circles.svg');
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 172%;
+        height: 172%;
+        max-width: 580px;
+        position: absolute;
+        z-index: 0;
+        bottom: -90px;
+        left: 3.5vw;
+        
+        transform: translateZ(-1); /* Adjusted line */
+    }
+
+    #showcase-zx7 {
+        background-image: url('./assets/home/tablet/image-speaker-zx7.jpg');
+        aspect-ratio: 2.15;
+    }
+    
+    .showcase-text-container2 {
+        margin-left: 8.09vw;
+    }
+   
+    #showcase-yx1 {
+        display: flex;
+        gap: 30px;
+    }
+    
+    #showcase-yx1 > div:first-child {
+        background-image: url('../assets/home/tablet/image-earphones-yx1.jpg');
+        background-size: cover;
+        background-position: center center;
+        aspect-ratio: 1.059375;
+        width: 44.14vw;
+        border-radius: 10px;
+        flex: 1;
+    }
+    
+    .showcase-text-container3 {
+        display: flex;
+        gap: 2rem;
+        background-color: #F1F1F1;
+        flex: 1;
+        border-radius: 10px;
+    }
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 35em) {
+    #front-page-feature {
+        background-image: url('../assets/home/mobile/image-header.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat:no-repeat;
+        width: 100%;
+        aspect-ratio: 0.625;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 2.5rem;
+        padding-inline: 4.5rem;
+       
+    }
+
+    
+    .front-page-text-container {
+        flex-direction: column;
+        gap: 1.5rem;
+        max-width: none;
+       
+    
+    }
+
+    .front-page-text-container h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    }
+
+    #showcase-feature {
+        margin-inline: 1.5rem;
+    }
+
+    #showcase-zx9 {
+        /* aspect-ratio: 0.9569; */
+        /* max-width: calc(100vw - 48px);
+        min-height: 527px; */
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 100;
+        position: relative;
+        gap: 4rem;
+        padding-block: 60px;
+        overflow: visible;
+        box-sizing: border-box;
+    }
+
+    #showcase-zx9::after {
+        content: '';
+        background-image: url('../assets/home/desktop/pattern-circles.svg');
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        height: 172%;
+        max-width: 580px;
+        position: absolute;
+        z-index: 0;
+        bottom: -90px;
+
+        left: 0px;
+        right: 0px;
+        
+        
+    }
+
+    #showcase-zx9 img{
+        position: relative;
+        aspect-ratio: 0.832109;
+        max-width: 200px;
+        bottom: 0;
+        left:0;
+        z-index: 10;
+        max-height: 300px;
+    }
+
+    .showcase-text-container1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.2rem;
+        margin-right: 0;
+        max-width: 410px;
+        z-index: 100;
+        margin-inline: 10.1vw;
+    }
+
+    .showcase-text-container h1 {
+        line-height: 42px;
+    }
+
+
+    #showcase-zx7 {
+        background-image: url('../assets/home/mobile/image-speaker-zx7.jpg');
+        width: 100%;
+        aspect-ratio:1.027;
+    }
+    
+    .showcase-text-container2 {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 75%;
+        margin-left: 1.2rem;
+    }
+
+    #showcase-yx1 {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    #showcase-yx1 > div:first-child {
+        background-image: url('../assets/home/mobile/image-earphones-yx1.jpg');
+        background-size: cover;
+        background-position: center center;
+        aspect-ratio: 1.635;
+        width: 100%;
+    }
+    
+    .showcase-text-container3 {
+        display: flex;
+        gap: 2rem;
+        background-color: #F1F1F1;
+        flex: 1;
+        border-radius: 10px;
+        aspect-ratio: 1.635;
+    }
+    
+    .showcase-text-container3 div {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-left: 6.697vw;
+    
+        justify-content: center;
+        max-width: 300px;
+    }
+        
+}
